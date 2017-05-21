@@ -5,7 +5,6 @@ var port = process.env.PORT
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
-server.maxConnections = 2;
 io.on('connection', function(socket){
 	
 	console.log('a user connected');
